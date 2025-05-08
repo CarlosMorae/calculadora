@@ -1,30 +1,36 @@
 package atividadeDois;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Menu {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Paciente paciente1 = new Paciente();
-        Paciente paciente2 = new Paciente();
+        //Lista de pacientes
+        ArrayList<Paciente> pacientes = new ArrayList<>();
 
-        System.out.println("Digite o nome do paciente");
-        paciente1.setNome(scanner.next());
-        System.out.println("Digite o CPF");
-        paciente1.setCPF(scanner.next());
-        System.out.println("Digite o email");
-        paciente1.setEmail(scanner.next());
+        //Loop para criação de pacientes
+        for (int contador = 0; contador <= 5; contador++) {
+            Paciente paciente = new Paciente();
+            System.out.println("Digite o nome completo do paciente");
+            paciente.setNome(scanner.nextLine());
+            System.out.println("Digite o cpf do paciente");
 
-        System.out.println(paciente1.toString());
+            //Loop para verificação do CPF
+            while (paciente.getCPF().length() != 11) {
+                System.out.println("O CPF do paciente deve ter 11 digitos");
+                System.out.println("Digite o CPF do paciente");
+                paciente.setCPF(scanner.next());
+            }
+            System.out.println("Digite o email do paciente");
+            paciente.setEmail(scanner.next());
 
-        System.out.println("Digite o nome do paciente");
-        paciente2.setNome(scanner.next());
-        System.out.println("Digite o CPF");
-        paciente2.setCPF(scanner.next());
-        System.out.println("Digite o email");
-        paciente2.setEmail(scanner.next());
+            pacientes.add(paciente);
 
-        System.out.println(paciente2.toString());
+        }
+        for (Paciente paciente : pacientes) {
+            System.out.println(paciente);
+        }
     }
 }
