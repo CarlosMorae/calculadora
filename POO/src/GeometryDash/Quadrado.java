@@ -1,9 +1,9 @@
 package GeometryDash;
 
-public class Quadrado extends FormaGeometrica {
+public class Quadrado extends FormaGeometrica{
     private double lado;
 
-    public Quadrado(String cor, double lado) {
+    public Quadrado(String cor, double lado){
         super(cor);
         this.lado = lado;
     }
@@ -28,6 +28,6 @@ public class Quadrado extends FormaGeometrica {
 
     @Override
     public double calcularVolume() {
-        return Math.pow(this.lado, 3); //lado^3
+        return Math.pow(this.lado, 3); // lado^3
     }
 }
