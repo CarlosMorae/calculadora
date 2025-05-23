@@ -1,10 +1,10 @@
 package GeometryDash;
 
-public class Quadrado extends FormaGeometrica{
+public class Quadrado extends FormaGeometrica {
     private double lado;
 
-    public Quadrado(String cor, double lado){
-        super(cor);
+    public Quadrado(String cor, double lado) {
+        super(cor); // Construtor da classe pai (forma geometrica)
         this.lado = lado;
     }
 

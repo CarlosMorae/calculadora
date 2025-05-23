@@ -2,10 +2,13 @@ package GeometryDash;
 
 import java.util.Scanner;
 
-public class Main {
+//Comando para indentação Ctrl+Alt+L
+public class Main { // Classe (documento de java)
     static Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    // Não pode ter uma funão dentro de outra função
+
+    public static void main(String[] args) { // função
         int opcao;
         do {
             System.out.println("Bem vindo ao Sistema de Calculadora de Formas Geometricas");
@@ -14,7 +17,8 @@ public class Main {
                     "Opções: \n" +
                             "0. Sair \n" +
                             "1. Quadrado\n" +
-                            "2. Retângulo\n");
+                            "2. Retângulo\n" +
+                            "3. Círculo\n");
             opcao = sc.nextInt();
 
             FormaGeometrica forma;
@@ -60,14 +64,33 @@ public class Main {
 
                         retornoCalculos(opcao2, forma);
                     } while (opcao2 != 0);
+                    break;
+                }
+                case 3: {
+                    System.out.println("Qual a cor do círculo:");
+                    String cor = sc.next();
+                    System.out.println("Qual o raio do círulo:");
+                    double raio = sc.nextDouble();
+                    System.out.println("Qual o diamentro do círculo:");
+                    double diamentro = sc.nextDouble();
+                    System.out.println("Qual a circunferência do círculo: ");
+                    double circunferencia = sc.nextDouble();
 
+                    forma = new Circulo(cor, raio, diamentro, circunferencia);
+
+                    int opcao3;
+                    do{
+                        opcao3 = menuCalculo();
+
+                        retornoCalculos(opcao3 , forma);
+                    }while (opcao3 != 0);
                     break;
                 }
             }
-        }while (opcao != 0);
+        } while (opcao != 0);
     }
 
-    static public int menuCalculo(){
+    static public int menuCalculo() { // Outra função (Metodo)
         System.out.println("Qual calculo deseja fazer?");
         System.out.println("Opções: \n"
                 + "0. Voltar \n"
@@ -77,6 +100,7 @@ public class Main {
         return sc.nextInt();
     }
 
+    // Outra função
     static public void retornoCalculos(int opcao, FormaGeometrica forma) {
         if (opcao < 0 || opcao > 3) {
             System.out.println("Opção Invalida!");
