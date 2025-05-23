@@ -6,6 +6,9 @@ public class FormaGeometrica {
     public FormaGeometrica(String cor) {
         this.cor = cor;
     }
+    public FormaGeometrica(){
+
+    }
 
     public String getCor() {
         return cor;

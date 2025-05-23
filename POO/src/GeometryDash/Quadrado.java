@@ -17,17 +17,17 @@ public class Quadrado extends FormaGeometrica {
     }
 
     @Override
-    public double calculaArea() {
+    public double calcularArea() {
         return this.lado * this.lado;
     }
 
     @Override
-    public double calculaPerimetro() {
+    public double calcularPerimetro() {
         return this.lado * 4;
     }
 
     @Override
-    public double calculaVolume() {
+    public double calcularVolume() {
         return Math.pow(this.lado, 3); // lado^3
     }
 }

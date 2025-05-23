@@ -108,15 +108,15 @@ public class Main { // Classe (documento de java)
 
         switch (opcao) {
             case 1: {
-                System.out.println("Perimetro: " + forma.calculaPerimetro());
+                System.out.println("Perimetro: " + forma.calcularPerimetro());
                 break;
             }
             case 2: {
-                System.out.println("Area: " + forma.calculaArea());
+                System.out.println("Area: " + forma.calcularArea());
                 break;
             }
             case 3: {
-                System.out.println("Volume: " + forma.calculaVolume());
+                System.out.println("Volume: " + forma.calcularVolume());
                 break;
             }
         }

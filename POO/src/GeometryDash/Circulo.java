@@ -42,17 +42,17 @@ public class Circulo extends FormaGeometrica {
     }
 
     @Override
-    public double calculaPerimetro() {
+    public double calcularPerimetro() {
         return (this.Raio + this.Diametro) * 2 * 3.14;
     }
 
     @Override
-    public double calculaArea() {
+    public double calcularArea() {
         return this.Raio * this.Diametro;
     }
 
     @Override
-    public double calculaVolume() {
+    public double calcularVolume() {
         return (this.Raio * this.Diametro) * this.Circunferencia;
     }
 }

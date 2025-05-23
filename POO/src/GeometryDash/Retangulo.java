@@ -40,17 +40,17 @@ public class Retangulo extends FormaGeometrica {
     }
 
     @Override
-    public double calculaPerimetro() {
+    public double calcularPerimetro() {
         return (this.largura + this.altura) * 2;
     }
 
     @Override
-    public double calculaArea() {
+    public double calcularArea() {
         return this.largura * this.altura;
     }
 
     @Override
-    public double calculaVolume() {
+    public double calcularVolume() {
         return (this.largura * this.comprimento) * this.altura;
     }
 }
