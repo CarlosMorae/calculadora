@@ -1,18 +1,18 @@
 package GeometryDash;
 
-public class Retangulo extends FormaGeometrica{
+public class Retangulo extends FormaGeometrica {
     private double largura;
     private double altura;
     private double comprimento;
 
     public Retangulo(String cor, double largura, double altura, double comprimento) {
-        super(cor);
+        super(cor); // Construtor da classe pai (forma geometrica)
         this.largura = largura;
         this.altura = altura;
         this.comprimento = comprimento;
     }
 
-    public Retangulo(){
+    public Retangulo() {
     }
 
     public double getAltura() {
