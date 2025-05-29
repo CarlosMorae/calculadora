@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main { // Classe (documento de java)
     static Scanner sc = new Scanner(System.in);
 
-    // Não pode ter uma funão dentro de outra função
+    // Não pode ter uma função dentro de outra função
 
     public static void main(String[] args) { // função
         int opcao;
