@@ -1,11 +1,14 @@
 package Empresa;
 
-public class Desenvolvedor extends Funcionario {
+public class Desenvolvedor extends Funcionario{
     private String linguagemPreferida;
 
     public Desenvolvedor(String Nome, double salarioBase, String linguagemPreferida) {
         super(Nome, salarioBase);
         this.linguagemPreferida = linguagemPreferida;
+    }
+
+    public Desenvolvedor(){
     }
 
     public String getLinguagemPreferida() {

@@ -1,12 +1,12 @@
-package animaisEstimacao;
+package animalEstimacao;
 
 public abstract class Animal {
     private String Nome;
     private int Idade;
 
-    public Animal(String Nome, int Idade) {
+    public Animal(String Nome, int Idade){
         this.Nome = Nome;
-        setIdade(Idade);
+        this.Idade = Idade;
     }
 
     public String getNome() {
@@ -22,16 +22,11 @@ public abstract class Animal {
     }
 
     public void setIdade(int idade) {
-        if (Idade < 0) {
-            this.Idade = idade;
-        } else {
-            System.out.println("Idade não pode ser negativa");
+        if (Idade < 0){
+            System.out.println("Idade não pode ser negativo");
         }
     }
-
     public abstract void emitirSom();
-
     public abstract void Comer();
-
     public abstract void exibirInformacoes();
 }

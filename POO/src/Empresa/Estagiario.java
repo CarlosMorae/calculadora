@@ -1,11 +1,14 @@
 package Empresa;
 
-public class Estagiario extends Funcionario {
+public class Estagiario extends Funcionario{
     private int horasEstagio;
 
     public Estagiario(String Nome, double salarioBase, int horasEstagio) {
         super(Nome, salarioBase);
         this.horasEstagio = horasEstagio;
+    }
+
+    public Estagiario(){
     }
 
     public int getHorasEstagio() {

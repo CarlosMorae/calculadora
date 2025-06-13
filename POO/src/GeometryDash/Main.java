@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main { // Classe (documento de java)
     static Scanner sc = new Scanner(System.in);
 
-    // Não pode ter uma funão dentro de outra função
+    // Não pode ter uma função dentro de outra função
 
     public static void main(String[] args) { // função
         int opcao;
@@ -79,11 +79,11 @@ public class Main { // Classe (documento de java)
                     forma = new Circulo(cor, raio, diamentro, circunferencia);
 
                     int opcao3;
-                    do{
+                    do {
                         opcao3 = menuCalculo();
 
-                        retornoCalculos(opcao3 , forma);
-                    }while (opcao3 != 0);
+                        retornoCalculos(opcao3, forma);
+                    } while (opcao3 != 0);
                     break;
                 }
             }

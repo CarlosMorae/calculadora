@@ -1,10 +1,10 @@
-package animaisEstimacao;
+package animalEstimacao;
 
-public class Cachorro extends Animal {
+public class Cachorro extends Animal{
     private String raca;
 
     public Cachorro(String Nome, int Idade, String raca){
-        super(Nome, Idade);
+        super (Nome, Idade);
         this.raca = raca;
     }
 

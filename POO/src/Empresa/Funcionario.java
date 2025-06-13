@@ -6,7 +6,6 @@ public class Funcionario {
 
     public Funcionario(String Nome, double salarioBase) {
         this.Nome = Nome;
-        this.salarioBase = salarioBase;
     }
 
     public Funcionario() {

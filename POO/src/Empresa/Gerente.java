@@ -1,24 +1,26 @@
 package Empresa;
 
 public class Gerente extends Funcionario {
-    private int projetosGerenciados;
+    private int projetoGerenciados;
 
-    public Gerente(String Nome, double salarioBase, int projetosGerenciados) {
+    public Gerente(String Nome, double salarioBase, int projetoGerenciados) {
         super(Nome, salarioBase);
-        this.projetosGerenciados = projetosGerenciados;
+        this.projetoGerenciados = projetoGerenciados;
     }
 
-    public int getProjetosGerenciados() {
-        return projetosGerenciados;
+    public Gerente() {
     }
 
-    public void setProjetosGerenciados(int projetosGerenciados) {
-        this.projetosGerenciados = projetosGerenciados;
+    public int getProjetoGerenciados() {
+        return projetoGerenciados;
+    }
+
+    public void setProjetoGerenciados(int projetoGerenciados) {
+        this.projetoGerenciados = projetoGerenciados;
     }
 
     @Override
     public double calcularBonus() {
         return getSalarioBase() * 0.15;
     }
-
 }
