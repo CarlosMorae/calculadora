@@ -17,7 +17,7 @@ public class FolhadePagamento {
             System.out.println("Funcionário: " + funcionario.getNome());
             System.out.println("salario Base R$: " + funcionario.getSalarioBase());
             System.out.println("Bônus R$: " + funcionario.calcularBonus());
-            System.out.println();
+            System.out.println("------------------------------");
         }
     }
 }
